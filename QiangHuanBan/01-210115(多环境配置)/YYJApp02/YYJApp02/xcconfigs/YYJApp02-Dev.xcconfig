@@ -1,0 +1,13 @@
+
+#include "Pods/Target Support Files/Pods-YYJApp02/Pods-YYJApp02.debug.xcconfig"
+
+// ’//‘ 双斜杠在这里用来注释，所以 https: 后面不能直接跟 ’//‘
+// 这里使用中间变量 ForwardSlash 来实现（使用变量可以用$()或${}）
+
+// 正斜杠变量
+ForwardSlash=/
+// base_url
+BASE_URL = https:${ForwardSlash}/dev.baidu.com
+                
+OTHER_LDFLAGS = $(inherited) -framework "CustomSDK"
+

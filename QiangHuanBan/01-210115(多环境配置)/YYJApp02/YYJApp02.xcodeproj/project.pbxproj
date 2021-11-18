@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B56C47424B6AAAECB7EBCD7 /* Pods_YYJApp02.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47348CEF88EF825F304EF23 /* Pods_YYJApp02.framework */; };
 		D9AFEBFE2744A004009F0F40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEBFD2744A004009F0F40 /* AppDelegate.m */; };
 		D9AFEC012744A004009F0F40 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEC002744A004009F0F40 /* SceneDelegate.m */; };
 		D9AFEC042744A004009F0F40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEC032744A004009F0F40 /* ViewController.m */; };
@@ -14,9 +15,15 @@
 		D9AFEC092744A006009F0F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9AFEC082744A006009F0F40 /* Assets.xcassets */; };
 		D9AFEC0C2744A006009F0F40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AFEC0A2744A006009F0F40 /* LaunchScreen.storyboard */; };
 		D9AFEC0F2744A006009F0F40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AFEC0E2744A006009F0F40 /* main.m */; };
+		D9DD131E2744DEAC00DB5659 /* YYJApp02-Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D9DD131D2744DEAC00DB5659 /* YYJApp02-Dev.xcconfig */; };
+		D9DD13202744DEC000DB5659 /* YYJApp02-Beta.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D9DD131F2744DEC000DB5659 /* YYJApp02-Beta.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E684A7154C7F74AD3905FFA /* Pods-YYJApp02.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYJApp02.beta.xcconfig"; path = "Target Support Files/Pods-YYJApp02/Pods-YYJApp02.beta.xcconfig"; sourceTree = "<group>"; };
+		7425635DA7C5D1FAD34E2BBD /* Pods-YYJApp02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYJApp02.release.xcconfig"; path = "Target Support Files/Pods-YYJApp02/Pods-YYJApp02.release.xcconfig"; sourceTree = "<group>"; };
+		C47348CEF88EF825F304EF23 /* Pods_YYJApp02.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYJApp02.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D996FF8F692097839AAFFB90 /* Pods-YYJApp02.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYJApp02.debug.xcconfig"; path = "Target Support Files/Pods-YYJApp02/Pods-YYJApp02.debug.xcconfig"; sourceTree = "<group>"; };
 		D9AFEBF92744A004009F0F40 /* YYJApp02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYJApp02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AFEBFC2744A004009F0F40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D9AFEBFD2744A004009F0F40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +36,9 @@
 		D9AFEC0B2744A006009F0F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9AFEC0D2744A006009F0F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9AFEC0E2744A006009F0F40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9DD131D2744DEAC00DB5659 /* YYJApp02-Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "YYJApp02-Dev.xcconfig"; sourceTree = "<group>"; };
+		D9DD131F2744DEC000DB5659 /* YYJApp02-Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "YYJApp02-Beta.xcconfig"; sourceTree = "<group>"; };
+		D9DD13212744DEE100DB5659 /* YYJApp02-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "YYJApp02-Release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +46,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B56C47424B6AAAECB7EBCD7 /* Pods_YYJApp02.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22D2D6312CBE020849E498A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D996FF8F692097839AAFFB90 /* Pods-YYJApp02.debug.xcconfig */,
+				0E684A7154C7F74AD3905FFA /* Pods-YYJApp02.beta.xcconfig */,
+				7425635DA7C5D1FAD34E2BBD /* Pods-YYJApp02.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D9AFEBF02744A004009F0F40 = {
 			isa = PBXGroup;
 			children = (
 				D9AFEBFB2744A004009F0F40 /* YYJApp02 */,
 				D9AFEBFA2744A004009F0F40 /* Products */,
+				EEF5E3D47BD80F652E23F348 /* Frameworks */,
+				22D2D6312CBE020849E498A4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +85,7 @@
 		D9AFEBFB2744A004009F0F40 /* YYJApp02 */ = {
 			isa = PBXGroup;
 			children = (
+				D9DD131C2744DE5600DB5659 /* xcconfigs */,
 				D9AFEBFC2744A004009F0F40 /* AppDelegate.h */,
 				D9AFEBFD2744A004009F0F40 /* AppDelegate.m */,
 				D9AFEBFF2744A004009F0F40 /* SceneDelegate.h */,
@@ -76,6 +101,24 @@
 			path = YYJApp02;
 			sourceTree = "<group>";
 		};
+		D9DD131C2744DE5600DB5659 /* xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				D9DD131D2744DEAC00DB5659 /* YYJApp02-Dev.xcconfig */,
+				D9DD131F2744DEC000DB5659 /* YYJApp02-Beta.xcconfig */,
+				D9DD13212744DEE100DB5659 /* YYJApp02-Release.xcconfig */,
+			);
+			path = xcconfigs;
+			sourceTree = "<group>";
+		};
+		EEF5E3D47BD80F652E23F348 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C47348CEF88EF825F304EF23 /* Pods_YYJApp02.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9AFEC122744A006009F0F40 /* Build configuration list for PBXNativeTarget "YYJApp02" */;
 			buildPhases = (
+				182D609458B9717F600E0EE2 /* [CP] Check Pods Manifest.lock */,
 				D9AFEBF52744A004009F0F40 /* Sources */,
 				D9AFEBF62744A004009F0F40 /* Frameworks */,
 				D9AFEBF72744A004009F0F40 /* Resources */,
+				A9BD4C9B22440E26957C3B66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +178,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9AFEC0C2744A006009F0F40 /* LaunchScreen.storyboard in Resources */,
+				D9DD13202744DEC000DB5659 /* YYJApp02-Beta.xcconfig in Resources */,
 				D9AFEC092744A006009F0F40 /* Assets.xcassets in Resources */,
 				D9AFEC072744A004009F0F40 /* Main.storyboard in Resources */,
+				D9DD131E2744DEAC00DB5659 /* YYJApp02-Dev.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		182D609458B9717F600E0EE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YYJApp02-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9BD4C9B22440E26957C3B66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YYJApp02/Pods-YYJApp02-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YYJApp02/Pods-YYJApp02-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YYJApp02/Pods-YYJApp02-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D9AFEBF52744A004009F0F40 /* Sources */ = {
@@ -225,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,10 +377,10 @@
 		};
 		D9AFEC132744A006009F0F40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9DD131D2744DEAC00DB5659 /* YYJApp02-Dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BASE_URL = "https://dev.baidu.com";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AF2X8ZL6B;
 				INFOPLIST_FILE = YYJApp02/Info.plist;
@@ -307,10 +396,10 @@
 		};
 		D9AFEC142744A006009F0F40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9DD13212744DEE100DB5659 /* YYJApp02-Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BASE_URL = "https://baidu.com";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AF2X8ZL6B;
 				INFOPLIST_FILE = YYJApp02/Info.plist;
@@ -375,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -385,10 +474,10 @@
 		};
 		D9AFEC162744AB62009F0F40 /* Beta */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9DD131F2744DEC000DB5659 /* YYJApp02-Beta.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BASE_URL = "https://beta.baidu.com";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AF2X8ZL6B;
 				INFOPLIST_FILE = YYJApp02/Info.plist;
