@@ -13,4 +13,4 @@ TTY=/dev/ttys006
 // 通过.xcconfig 配置的蚕食实际上执行的是 clang 命令，
 // -Xlinker : 指定这个参数是传给 连接器的
 // -S: 不要将调试信息(stab或DWARF)放在输出文件中。(不输出调试符号)
-OTHER_LDFLAGS=-Xlinker -S
+//OTHER_LDFLAGS=-Xlinker -S
