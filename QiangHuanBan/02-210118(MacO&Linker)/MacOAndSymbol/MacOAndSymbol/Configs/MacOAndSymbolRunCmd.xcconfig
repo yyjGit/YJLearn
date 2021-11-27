@@ -1,0 +1,40 @@
+
+
+// CMD = 运行的命令
+// CMD_FLAF = 命令参数
+// TTY = 输出到指定终端
+// $SRCROOT 代码的路径
+MACHO_PATH=${BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/*
+///Users/yangyongjie/gamecenter_ios/Workspace/NJSDKWorkspace_NoThirdPay/Demo/Demo/NextJoy/tencent/TencentOpenAPI.framework/TencentOpenAPI
+
+
+// 查看 maco header 信息的两种方式
+//CMD = objdump --macho -private-header ${MACHO_PATH}
+//CMD = otool -h ${MACHO_PATH}
+
+// 查看 __TEXT
+//CMD = objdump --macho -d ${MACHO_PATH}
+
+// 查看符号表
+//CMD = objdump --macho --syms ${MACHO_PATH}
+
+// 查看导出符号表
+CMD = objdump --macho --exports-trie ${MACHO_PATH}
+
+// 查看间接符号表
+//CMD = objdump --macho --indirect-symbols ${MACHO_PATH}
+
+// 查看重定位符号表
+//CMD = objdump --macho --reloc ${MACHO_PATH}
+
+// nm -m 查看符号表
+//CMD = nm -m ${MACHO_PATH}
+
+TTY=/dev/ttys002
+
+
+
+// 通过.xcconfig 配置的蚕食实际上执行的是 clang 命令，
+// -Xlinker : 指定这个参数是传给 连接器的
+// -S: 不要将调试信息(stab或DWARF)放在输出文件中。(不输出调试符号)
+//OTHER_LDFLAGS=-Xlinker -S

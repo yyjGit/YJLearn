@@ -1,0 +1,22 @@
+#include "MacOAndSymbolRunCmd.xcconfig"
+
+// 不输出调试符号
+OTHER_LDFLAGS=$(inherited) -Xlinker -S
+
+// 通过 -map 参数，将符号导出到指定文件
+//OTHER_LDFLAGS=$(inherited) -Xlinker -S -Xlinker -map -Xlinker 'file path'
+
+// 不导出指定符号
+//OTHER_LDFLAGS=$(inherited) -Xlinker -unexported_symbol -Xlinker _OBJC_CLASS_$_YJTestObject
+// 不导出指定符号
+//OTHER_LDFLAGS=$(inherited) -Xlinker -unexported_symbol -Xlinker  _OBJC_METACLASS_$_YJTestObject
+
+// 不导出指定符号，通过文件设置 (这里的不好使)
+//OTHER_LDFLAGS=$(inherited) -Xlinker -unexported_symbols_list -Xlinker /Users/yangyongjie/Desktop/unexprots_symbol.txt
+
+// -U ：告诉连接器 不用去找 _weak_import_function 符号，
+//OTHER_LDFLAGS=$(inherited) -Xlinker -U -Xlinker _weak_import_function
+
+// 间接符号 -> 符号 -> 别名
+OTHER_LDFLAGS=$(inherited) -Xlinker -alias -Xlinker _NSLog -Xlinker _YJ_NSLog
+
